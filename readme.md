@@ -64,3 +64,18 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # laravel_bbs
+
+## バージョン情報
+・PHP      ７．１
+・Laravel　５．６
+・MySQL　  5.7
+
+## 機能
+・投稿一覧表示
+・新規投稿
+・投稿内容編集/削除
+・投稿毎へのコメント機能
+
+## 追加すべき機能
+・ユーザーログイン機能
+・コメント編集/削除
