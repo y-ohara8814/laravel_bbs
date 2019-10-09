@@ -1,8 +1,10 @@
 # laravel_bbs
 
 ## バージョン情報
-・PHP      ７．１
-・Laravel　５．６
+・PHP      7.1
+
+・Laravel　5.6
+
 ・MySQL　  5.7
 
 ## 機能
