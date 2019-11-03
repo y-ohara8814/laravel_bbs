@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('content')
+
     <div class="container mt-4">
         <div class="border p-4">
         <div class="mb-4 text-right">
@@ -71,7 +72,9 @@
                         </time>
                         <p class="mt-2">
                             {!! nl2br(e($comment->body)) !!}
+                            <button type="button" id="send_editcomment" class="test">OK</button>
                         </p>
+                        
                     </div>
                 @empty
                     <p>コメントはまだありません。</p>
@@ -79,4 +82,24 @@
             </section>
         </div>
     </div>
+    <div id="app">
+    <!-- デフォルトだとこの中ではvue.jsが有効 -->
+    <!-- example-component はLaravelに入っているサンプルのコンポーネント -->
+    <example-component></example-component>
+    </div>
+    <script>
+    $(function(){
+        console.log("hello")
+    });
+    </script>
+    <script>
+        $(function(){
+            $(".test").click(function(){
+                $(this).css("background-color","green")
+            });
+        });
+    </script>
+    <div id="vue_example"></div>
+
+    
 @endsection

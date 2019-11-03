@@ -81,4 +81,6 @@ class PostsController extends Controller
 
         return redirect()->route('top');
     }
+
+    
 }

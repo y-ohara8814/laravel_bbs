@@ -20,4 +20,13 @@ class CommentsController extends Controller
         return redirect()->route('posts.show',['post' => $post]);
 
     }
+
+    //コメントのupdate
+    public function commentupdate(Request $request)
+    {
+        //Postモデルを通して、postsテーブル内の$post_idに紐づくレコードを取得
+        $post = Post::findOrFail($post_id);
+        //複数のレコードを更新
+        $post->comments()->fill($params)->save();
+    }
 }
